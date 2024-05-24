@@ -29,3 +29,9 @@ function add(a: Combinable, b: Combinable) {
     }
     return a + b;
 }
+
+type UnknownEmployee = Employee | Admin;
+
+function printEmployeeInformation(emp: UnknownEmployee) {
+    console.log('Name' + emp.name);
+}
